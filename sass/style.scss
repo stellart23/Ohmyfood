@@ -1,0 +1,70 @@
+header {
+    background: #579C87;
+    height: 10%;
+}
+
+.logo {
+    width: 200px;
+    margin: auto;
+}
+
+.element1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.element2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+%btnmenu {
+    width: 200px;
+    height: 284px;
+    margin: 20px;
+
+}
+
+.LaNoteEnchantée {
+    @extend %btnmenu;
+    background: #FCDFDB;
+    text-align: center;
+}
+
+.LeChicALaFrançaise {
+    @extend %btnmenu;
+    background: #FFF5FE;
+    text-align: center;
+}
+
+.LeDéliceDesPapilles {
+    @extend %btnmenu;
+    background: #F9F9F9;
+    text-align: center;
+}
+
+.LaPaletteDuGoût {
+    @extend %btnmenu;
+    background: #FDFFFD;
+    text-align: center;
+}
+
+.btnProchainement {
+    background: #579C87;
+    color: #FDCB46;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    /* height: 35px; */
+    text-align: center;
+    vertical-align: middle;
+    padding: 7px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background: #579C87;
+    color: #FDCB46;
+}
