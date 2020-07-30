@@ -1,34 +1,11 @@
-/*fonts*/
+
 @import './fonts.css';
 
+@import 'libs/animations.scss';
 
-/*variables*/
-/* color base */
-$color_primary:#579C87;
-$color_secondary:#FDCB46;
+@import 'libs/variables.scss';
 
 
-/* color menu */
-$menu1color1: #FCDFDB;
-$menu2color1:#FFF5FE;
-$menu3color1:#EDEFEF;
-$menu4color1:#FDFFFD;
-$title-menu1:#3D1319;
-$title-menu2:#C77412;
-
-/* color gradient*/
-$color_gradient_clef:linear-gradient(to left, #F6916A,#f15d61);
-$color_gradient_menu2:linear-gradient(to left,#965EEC,#C77412);
-$color_gradient_menu3:linear-gradient(to left,#0887FB,#0023DB);
-$color_gradient_menu4:linear-gradient(to left,#BEFF7F,#499C40,#72BF56);
-/* Fonts*/
-
-$font-title-menu1:'devonshireregular';
-$font-title-menu2:'croissant_oneregular';
-$font-title-menu3:'parisienneregular';
-$font-title-menu4:'kaushan_scriptregular';
-$font-menu1:'kalamlight';
-$font-menu2:'libre_baskervilleregular';
 
 body {
     margin: 0;
@@ -149,7 +126,6 @@ header {
     }
 }
 
-$ball-size : 50px;
 
 .btnProchainement {
     background: $color_primary;
@@ -185,13 +161,6 @@ h1, h2{
     padding-top: 20px;
 }
 
-a.linkMenu:hover + .zoom{
-    transform: scale(1.3);
-    opacity: 0.7;
-    transition: 1.3s;
-    pointer-events: none;
- 
-}
 
 .navigation{
     position: fixed;
@@ -335,69 +304,6 @@ ul{
 
 }
 
-h3{
-    position: relative;
-    
-}
-
-h3::after{
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    content:"";
-    transition: linear 1.3s;
-    background: black;
-     
-}
-
-h3:hover::after{
-
-    width: 100%;
-}
-
-@keyframes wiggle {
-    0% { transform: rotate(0deg); }
-   80% { transform: rotate(0deg); }
-   85% { transform: rotate(5deg); }
-   95% { transform: rotate(-5deg); }
-  100% { transform: rotate(0deg); }
-}
-
-.MentionsLégales:hover, .ConctactezNous:hover{
-    animation: wiggle 0.6s infinite;
-}
-
-
-
-.loading span{
-    width: 15px;
-    height: 15px;
-    margin: 0 5px;
-    background-color: #ffd957;
-    border-radius: 50%;
-    display: inline-block;
-    animation-name: dots;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
-
-.loading span:nth-child(2){
-    animation-delay: 0.4s;
-}
-
-.loading span:nth-child(3){
-    animation-delay: 0.8s;
-}
-
-@keyframes dots{
-    50%{
-        opacity: 0;
-        transform: scale(0.7) translateY(10px);
-    }
-}
 
 /*responsive*/
 @import 'libs/responsive.scss';
