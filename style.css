@@ -1,61 +1,133 @@
 @charset "UTF-8";
+/*fonts*/
+@import './fonts.css';
+/*variables*/
+/* color base */
+/* color menu */
+/* color gradient*/
+/* Fonts*/
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #FDCB46;
+}
+
 header {
   background: #579C87;
   height: 10%;
 }
 
-.logo {
-  width: 200px;
-  margin: auto;
-}
-
-.element1 {
+.conteneur-menu {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  padding: 30px 0;
 }
 
-.element2 {
-  display: flex;
-  justify-content: space-evenly;
+.linkMenu {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.LaPaletteDuGoût, .LeDéliceDesPapilles, .LeChicALaFrançaise, .LaNoteEnchantée {
+.Menu_LaPaletteDuGoût, .Menu_LeDéliceDesPapilles, .Menu_LeChicALaFrançaise, .Menu_LaNoteEnchantée {
   width: 200px;
   height: 284px;
-  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 1px 1px 12px #a7a5a5;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
-.LaNoteEnchantée {
+.Menu_LaNoteEnchantée {
   background: #FCDFDB;
   text-align: center;
 }
+.Menu_LaNoteEnchantée i::before {
+  background-image: linear-gradient(to left, #F6916A, #f15d61);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+}
+.Menu_LaNoteEnchantée h2 {
+  font-family: "devonshireregular";
+  color: #3D1319;
+}
+.Menu_LaNoteEnchantée h3 {
+  font-family: "kalamlight";
+}
 
-.LeChicALaFrançaise {
+.Menu_LeChicALaFrançaise {
   background: #FFF5FE;
   text-align: center;
 }
-
-.LeDéliceDesPapilles {
-  background: #F9F9F9;
-  text-align: center;
+.Menu_LeChicALaFrançaise h2 {
+  font-family: "croissant_oneregular";
+  font-size: 14px;
+  background-image: linear-gradient(to left, #965EEC, #C77412);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Menu_LeChicALaFrançaise h3 {
+  font-family: "libre_baskervilleregular";
+  color: #C77412;
 }
 
-.LaPaletteDuGoût {
+.Menu_LeDéliceDesPapilles {
+  background: #EDEFEF;
+  text-align: center;
+}
+.Menu_LeDéliceDesPapilles h2 {
+  font-family: "parisienneregular";
+  background-image: linear-gradient(to left, #0887FB, #0023DB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Menu_LeDéliceDesPapilles h3 {
+  color: #0887FB;
+}
+
+.Menu_LaPaletteDuGoût {
   background: #FDFFFD;
   text-align: center;
+}
+.Menu_LaPaletteDuGoût h2 {
+  font-family: "kaushan_scriptregular";
+  background-image: linear-gradient(to left, #BEFF7F, #499C40, #72BF56);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Menu_LaPaletteDuGoût h3 {
+  color: #72BF56;
 }
 
 .btnProchainement {
   background: #579C87;
   color: #FDCB46;
-  width: 200px;
+  width: 180px;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   border-radius: 5px;
-  /* height: 35px; */
   text-align: center;
   vertical-align: middle;
   padding: 7px;
+  font-family: "open_sansregular";
+  cursor: pointer;
+}
+.btnProchainement:active + .loading span {
+  transform: scale(1.15);
 }
 
 nav {
@@ -63,6 +135,287 @@ nav {
   justify-content: space-evenly;
   background: #579C87;
   color: #FDCB46;
+  font-family: "open_sansregular";
+}
+
+h1, h2 {
+  text-align: center;
+  font-family: "open_sansbold";
+}
+
+a.linkMenu:hover + .zoom {
+  transform: scale(1.3);
+  opacity: 0.7;
+  transition: 1.3s;
+  pointer-events: none;
+}
+
+.navigation {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.container_menu_4, .container_menu_3, .container_menu_2, .container_menu_1 {
+  width: 80%;
+  margin: auto;
+  justify-items: center;
+}
+
+.container_menu_1 {
+  background-color: #FCDFDB;
+}
+.container_menu_1 h2 {
+  font-family: "devonshireregular";
+  color: #3D1319;
+  font-size: 50px;
+}
+.container_menu_1 h3 {
+  font-family: "tillanaregular";
+  font-size: 30px;
+}
+
+.container_menu_2 {
+  background-color: #FFF5FE;
+}
+.container_menu_2 h2 {
+  font-family: "croissant_oneregular";
+  background-image: linear-gradient(to left, #965EEC, #C77412);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+}
+
+.container_menu_3 {
+  background-color: #EDEFEF;
+  font-family: "kalamlight";
+}
+.container_menu_3 h1, .container_menu_3 h2 {
+  font-family: "parisienneregular";
+  background-image: linear-gradient(to left, #0887FB, #0023DB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+}
+
+.container_menu_4 {
+  background-color: #FDFFFD;
+  font-family: "kalamlight";
+}
+.container_menu_4 h2 {
+  font-family: "kaushan_scriptregular";
+  background-image: linear-gradient(to left, #BEFF7F, #499C40, #72BF56);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+}
+
+.area-menu {
+  width: 80%;
+  margin: auto;
+}
+
+.lign-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.lign-menu .lign-left-menu-1, .lign-menu .lign-right-menu-1 {
+  width: 290px;
+  max-width: 30%;
+}
+
+i::before {
+  background-image: linear-gradient(to left, #F6916A, #f15d61);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 70px;
+}
+
+article {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prelude, .pointDorgue, .mouvementFinal {
+  font-family: "kalamlight";
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.enApetit, .desPapilles, .gourmandisesSucrees {
+  font-family: "libre_baskervilleregular";
+}
+
+.enApetit {
+  color: #C77412;
+}
+
+.desPapilles {
+  color: #A56799;
+}
+
+.gourmandisesSucrees {
+  color: #6E4CCC;
+}
+
+.appetit {
+  color: #C77412;
+}
+
+.papilles {
+  color: #A56799;
+}
+
+.sucrees {
+  color: #6E4CCC;
+}
+
+h3 {
+  position: relative;
+}
+
+h3::after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  content: "";
+  transition: linear 1.3s;
+  background: black;
+}
+
+h3:hover::after {
+  width: 100%;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  95% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.MentionsLégales:hover, .ConctactezNous:hover {
+  animation: wiggle 0.6s infinite;
+}
+
+.loading span {
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  background-color: #ffd957;
+  border-radius: 50%;
+  display: inline-block;
+  animation-name: dots;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.loading span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.loading span:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+@keyframes dots {
+  50% {
+    opacity: 0;
+    transform: scale(0.7) translateY(10px);
+  }
+}
+/*responsive*/
+/*@media all and (max-width: 640px)*/
+@media (max-width: 640px) {
+  .bloc-menus {
+    margin-bottom: 15px;
+    width: 80%;
+  }
+
+  .conteneur-menu {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .Menu_LeChicALaFrançaise h2 {
+    font-size: 20px;
+  }
+
+  .Menu_LaNoteEnchantée h2 {
+    font-size: 33px;
+  }
+
+  header {
+    margin-bottom: 25px;
+  }
+
+  .container_menu_1 .fa-music:before {
+    font-size: 25px;
+  }
+  .container_menu_1 h2 {
+    font-size: 20px;
+  }
+  .container_menu_1 h3 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .container_menu_1 article {
+    font-size: 8px;
+  }
+
+  .menu1-h2 {
+    font-size: 25px;
+  }
+
+  .fa-music:before {
+    font-size: 25px;
+  }
+
+  .container_menu_2 {
+    font-size: 8px;
+  }
+
+  .container_menu_3 {
+    font-size: 8px;
+    width: 100%;
+  }
+  .container_menu_3 h2 {
+    font-size: 25px;
+  }
+
+  .area-menu {
+    width: 99%;
+  }
+
+  .container_menu_4 {
+    font-size: 9px;
+    width: 100%;
+  }
+  .container_menu_4 h2 {
+    font-size: 25px;
+  }
+
+  .mentionLegales {
+    text-align: justify;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

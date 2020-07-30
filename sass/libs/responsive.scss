@@ -1,0 +1,81 @@
+$medium-up: "all and (max-width: 640px)";
+
+/*@media all and (max-width: 640px)*/
+@media (max-width: 640px) {
+
+    .bloc-menus {
+        margin-bottom: 15px;
+        width: 80%;
+    }
+
+    .conteneur-menu{
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .Menu_LeChicALaFrançaise {
+        h2{
+            font-size: 20px;
+        }
+    }
+
+    .Menu_LaNoteEnchantée{
+        h2{
+            font-size: 33px;
+        }
+    }
+
+    header{
+        margin-bottom: 25px;
+    }
+
+    .container_menu_1{
+        .fa-music:before {
+            font-size: 25px;
+        }
+        h2{
+            font-size: 20px;
+        }
+        h3{
+            font-size: 15px;
+            text-align: center;
+        }
+        article{
+            font-size: 8px;
+        }
+    }
+
+    .menu1-h2{
+        font-size: 25px;
+    }
+        .fa-music:before {
+            font-size: 25px;
+        }
+
+        .container_menu_2 {
+            font-size: 8px;
+        }
+
+        .container_menu_3 {
+            font-size: 8px;
+            width: 100%;
+            h2{
+                font-size: 25px;
+            }
+        }
+        .area-menu{
+            width: 99%;
+        }
+
+        .container_menu_4 {
+            font-size: 9px;
+            width: 100%;
+            h2{
+                font-size: 25px;
+            }
+        }
+
+        .mentionLegales{
+            text-align: justify;
+        }
+    }

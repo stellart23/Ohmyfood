@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'kaushan_scriptregular';
+    src: url('fonts/kaushan/kaushanscript-regular-webfont.woff2') format('woff2'),
+         url('fonts/kaushan/kaushanscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'kalamlight';
+    src: url('fonts/kalam/kalam-light-webfont.woff2') format('woff2'),
+         url('fonts/kalam/kalam-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'kalamregular';
+    src: url('fonts/kalam/kalam-regular-webfont.woff2') format('woff2'),
+         url('fonts/kalam/kalam-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'parisienneregular';
+    src: url('fonts/parisianne/parisienne-regular-webfont.woff2') format('woff2'),
+         url('fonts/parisianne/parisienne-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('fonts/open_sans/opensans-bold-webfont.woff2') format('woff2'),
+         url('fonts/open_sans/opensans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url('fonts/open_sans/opensans-extrabold-webfont.woff2') format('woff2'),
+         url('fonts/open_sans/opensans-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('fonts/open_sans/opensans-light-webfont.woff2') format('woff2'),
+         url('fonts/open_sans/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/open_sans/opensans-regular-webfont.woff2') format('woff2'),
+         url('fonts/open_sans/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('fonts/open_sans/opensans-semibold-webfont.woff2') format('woff2'),
+         url('fonts/open_sans/opensans-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'devonshireregular';
+    src: url('fonts/devonshire/devonshire-regular-webfont.woff2') format('woff2'),
+         url('fonts/devonshire/devonshire-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'croissant_oneregular';
+    src: url('fonts/croissantOne/croissantone-regular-webfont.woff2') format('woff2'),
+         url('fonts/croissantOne/croissantone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'libre_baskervilleregular';
+    src: url('fonts/LibreBaskerville/libre-baskerville.regular-webfont.woff2') format('woff2'),
+         url('fonts/LibreBaskerville/libre-baskerville.regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'tillanaregular';
+    src: url('fonts/tillana/tillana-regular-webfont.woff2') format('woff2'),
+         url('fonts/tillana/tillana-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
