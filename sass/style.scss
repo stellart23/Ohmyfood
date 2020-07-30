@@ -66,8 +66,8 @@ header {
 
 
 %btnmenu {
-    width: 200px;
-    height: 284px;
+    width: 240px;
+    height: 325px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,7 +105,7 @@ header {
     text-align: center;
     h2 {
         font-family: $font-title-menu2;
-        font-size: 14px;
+        font-size: 16px;
         background-image: $color_gradient_menu2;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -126,6 +126,7 @@ header {
         background-image: $color_gradient_menu3;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-size: 25px;
     }
     h3{
         color: #0887FB;
@@ -141,6 +142,7 @@ header {
         background-image: $color_gradient_menu4;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-size: 25px;
     }
     h3{
         color: #72BF56;
@@ -179,6 +181,8 @@ nav {
 h1, h2{
     text-align: center;
     font-family: 'open_sansbold';
+    margin-bottom: 50px;
+    padding-top: 20px;
 }
 
 a.linkMenu:hover + .zoom{
@@ -222,12 +226,13 @@ a.linkMenu:hover + .zoom{
 .container_menu_2 {
     @extend %container_menu;
     background-color: $menu2color1;
+    line-height: 45px;
     h2{
         font-family: $font-title-menu2;
         background-image: $color_gradient_menu2;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 20px;
+        font-size: 40px;
     }
 
 }
@@ -283,7 +288,7 @@ i::before{
     background-image: $color_gradient_clef;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 70px;
+    font-size: 60px;
 }
 
 article{

@@ -39,8 +39,8 @@ header {
 }
 
 .Menu_LaPaletteDuGoût, .Menu_LeDéliceDesPapilles, .Menu_LeChicALaFrançaise, .Menu_LaNoteEnchantée {
-  width: 200px;
-  height: 284px;
+  width: 240px;
+  height: 325px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,7 +75,7 @@ header {
 }
 .Menu_LeChicALaFrançaise h2 {
   font-family: "croissant_oneregular";
-  font-size: 14px;
+  font-size: 16px;
   background-image: linear-gradient(to left, #965EEC, #C77412);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -94,6 +94,7 @@ header {
   background-image: linear-gradient(to left, #0887FB, #0023DB);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 25px;
 }
 .Menu_LeDéliceDesPapilles h3 {
   color: #0887FB;
@@ -108,6 +109,7 @@ header {
   background-image: linear-gradient(to left, #BEFF7F, #499C40, #72BF56);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 25px;
 }
 .Menu_LaPaletteDuGoût h3 {
   color: #72BF56;
@@ -141,6 +143,8 @@ nav {
 h1, h2 {
   text-align: center;
   font-family: "open_sansbold";
+  margin-bottom: 50px;
+  padding-top: 20px;
 }
 
 a.linkMenu:hover + .zoom {
@@ -178,13 +182,14 @@ a.linkMenu:hover + .zoom {
 
 .container_menu_2 {
   background-color: #FFF5FE;
+  line-height: 45px;
 }
 .container_menu_2 h2 {
   font-family: "croissant_oneregular";
   background-image: linear-gradient(to left, #965EEC, #C77412);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 20px;
+  font-size: 40px;
 }
 
 .container_menu_3 {
@@ -230,7 +235,7 @@ i::before {
   background-image: linear-gradient(to left, #F6916A, #f15d61);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 70px;
+  font-size: 60px;
 }
 
 article {
@@ -367,18 +372,20 @@ h3:hover::after {
     margin-bottom: 25px;
   }
 
+  .container_menu_1 {
+    font-size: 12px;
+    width: 100%;
+  }
   .container_menu_1 .fa-music:before {
-    font-size: 25px;
+    font-size: 35px;
   }
   .container_menu_1 h2 {
-    font-size: 20px;
+    font-size: 40px;
+    margin: 0;
   }
   .container_menu_1 h3 {
     font-size: 15px;
     text-align: center;
-  }
-  .container_menu_1 article {
-    font-size: 8px;
   }
 
   .menu1-h2 {
@@ -390,11 +397,16 @@ h3:hover::after {
   }
 
   .container_menu_2 {
-    font-size: 8px;
+    font-size: 10px;
+    width: 100%;
+  }
+  .container_menu_2 h2 {
+    font-size: 27px;
+    margin: 0;
   }
 
   .container_menu_3 {
-    font-size: 8px;
+    font-size: 12px;
     width: 100%;
   }
   .container_menu_3 h2 {
@@ -415,6 +427,10 @@ h3:hover::after {
 
   .mentionLegales {
     text-align: justify;
+  }
+
+  h1 {
+    margin: 0;
   }
 }
 

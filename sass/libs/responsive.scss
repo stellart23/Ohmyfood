@@ -30,18 +30,18 @@ $medium-up: "all and (max-width: 640px)";
     }
 
     .container_menu_1{
+        font-size: 12px;
+        width: 100%;
         .fa-music:before {
-            font-size: 25px;
+            font-size: 35px;
         }
         h2{
-            font-size: 20px;
+            font-size: 40px;
+            margin: 0;
         }
         h3{
             font-size: 15px;
             text-align: center;
-        }
-        article{
-            font-size: 8px;
         }
     }
 
@@ -53,11 +53,16 @@ $medium-up: "all and (max-width: 640px)";
         }
 
         .container_menu_2 {
-            font-size: 8px;
+            font-size: 10px;
+            width: 100%;
+            h2{
+                font-size: 27px;
+                margin: 0;
+            }
         }
 
         .container_menu_3 {
-            font-size: 8px;
+            font-size: 12px;
             width: 100%;
             h2{
                 font-size: 25px;
@@ -77,5 +82,9 @@ $medium-up: "all and (max-width: 640px)";
 
         .mentionLegales{
             text-align: justify;
+        }
+
+        h1{
+            margin: 0;
         }
     }
