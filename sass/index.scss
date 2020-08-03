@@ -1,0 +1,125 @@
+.conteneur-menu {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+
+}
+
+.linkMenu {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+i::before{
+    background-image: $color_gradient_clef;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 60px;
+}
+
+
+%btnmenu {
+    width: 240px;
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 1px 1px 12px rgb(167, 165, 165);
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.Menu_LaNoteEnchantée {
+    @extend %btnmenu;
+    background: $menu1color1;
+    text-align: center;
+        i::before{
+        background-image: $color_gradient_clef;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 45px;
+
+        }
+            h2 {
+            font-family: $font-title-menu1;
+            color: $title-menu1;
+            }
+            h3 {
+                font-family: $font-menu1;
+            }
+}
+
+
+.Menu_LeChicALaFrançaise {
+    @extend %btnmenu;
+    background: $menu2color1;
+    text-align: center;
+    h2 {
+        font-family: $font-title-menu2;
+        font-size: 16px;
+        background-image: $color_gradient_menu2;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    h3 {
+        font-family: $font-menu2;
+        color: $title-menu2;
+    }
+}
+
+.Menu_LeDéliceDesPapilles {
+    @extend %btnmenu;
+    background: $menu3color1;
+    text-align: center;
+    h2 {
+        font-family: $font-title-menu3;
+        background-image: $color_gradient_menu3;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 23px;
+    }
+    h3{
+        color: #0887FB;
+    }
+}
+
+.Menu_LaPaletteDuGoût {
+    @extend %btnmenu;
+    background: $menu4color1;
+    text-align: center;
+    h2 {
+        font-family: $font-title-menu4;
+        background-image: $color_gradient_menu4;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 25px;
+    }
+    h3{
+        color: #72BF56;
+    }
+}
+
+
+.btnProchainement {
+    background: $color_primary;
+    color: $color_secondary;
+    width: 180px;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 7px;
+    font-family: 'open_sansregular';
+    cursor: pointer;
+    &:active + .loading span{
+        transform: scale(1.15);
+    }
+
+}

@@ -10,13 +10,7 @@ a.linkMenu:hover + .zoom{
 }
 
 /*effet soulignement titres h3 menu*/
-
-h3{
-    position: relative;
-    
-}
-
-h3::after{
+@mixin background($color-underline:black) {
     position: absolute;
     bottom: -2px;
     left: 0;
@@ -24,8 +18,18 @@ h3::after{
     height: 2px;
     content:"";
     transition: linear 1.3s;
-    background: black;
+    background: $color-underline;
      
+    
+}
+
+h3{
+    position: relative;
+    
+}
+
+h3::after{
+    @include background;
 }
 
 h3:hover::after{

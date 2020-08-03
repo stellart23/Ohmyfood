@@ -1,0 +1,20 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "projet ohmyfood",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stellart23/Ohmyfood.git"
+  },
+  "author": "stellart23",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stellart23/Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/stellart23/Ohmyfood#readme"
+}
+

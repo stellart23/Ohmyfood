@@ -82,24 +82,6 @@ h3:hover::after {
 /* color menu */
 /* color gradient*/
 /* Fonts*/
-body {
-  margin: 0;
-}
-
-h1 {
-  margin: 0px;
-}
-
-a {
-  text-decoration: none;
-  color: #FDCB46;
-}
-
-header {
-  background: #579C87;
-  height: 10%;
-}
-
 .conteneur-menu {
   display: flex;
   justify-content: center;
@@ -112,6 +94,13 @@ header {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+i::before {
+  background-image: linear-gradient(to left, #F6916A, #f15d61);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px;
 }
 
 .Menu_LaPaletteDuGoût, .Menu_LeDéliceDesPapilles, .Menu_LeChicALaFrançaise, .Menu_LaNoteEnchantée {
@@ -135,7 +124,7 @@ header {
   background-image: linear-gradient(to left, #F6916A, #f15d61);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 30px;
+  font-size: 45px;
 }
 .Menu_LaNoteEnchantée h2 {
   font-family: "devonshireregular";
@@ -170,7 +159,7 @@ header {
   background-image: linear-gradient(to left, #0887FB, #0023DB);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 25px;
+  font-size: 23px;
 }
 .Menu_LeDéliceDesPapilles h3 {
   color: #0887FB;
@@ -206,6 +195,24 @@ header {
 }
 .btnProchainement:active + .loading span {
   transform: scale(1.15);
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #FDCB46;
+}
+
+header {
+  background: #579C87;
+  height: 10%;
 }
 
 nav {
@@ -260,17 +267,33 @@ h1, h2 {
   -webkit-text-fill-color: transparent;
   font-size: 40px;
 }
+.container_menu_2 h3 {
+  font-size: 30px;
+}
 
 .container_menu_3 {
   background-color: #EDEFEF;
   font-family: "kalamlight";
 }
-.container_menu_3 h1, .container_menu_3 h2 {
+.container_menu_3 h2 {
   font-family: "parisienneregular";
   background-image: linear-gradient(to left, #0887FB, #0023DB);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 50px;
+}
+.container_menu_3 h3::after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  content: "";
+  transition: linear 1.3s;
+  background: #0023DB;
+}
+.container_menu_3 h3:hover::after {
+  width: 100%;
 }
 
 .container_menu_4 {
@@ -300,13 +323,6 @@ h1, h2 {
   max-width: 30%;
 }
 
-i::before {
-  background-image: linear-gradient(to left, #F6916A, #f15d61);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 60px;
-}
-
 article {
   display: flex;
   justify-content: space-between;
@@ -321,11 +337,11 @@ ul {
   padding: 0;
 }
 
-.enApetit, .desPapilles, .gourmandisesSucrees {
+.appetit, .desPapilles, .gourmandisesSucrees {
   font-family: "libre_baskervilleregular";
 }
 
-.enApetit {
+.enAppetit {
   color: #C77412;
 }
 
