@@ -87,6 +87,13 @@ h1, h2{
     h3{
         font-size: 30px;
     }
+    h3::after{
+        @include background($color_gradient_menu2);
+    }
+    h3:hover::after{
+
+        width: 100%;
+    }
 
 }
 

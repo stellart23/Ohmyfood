@@ -270,6 +270,19 @@ h1, h2 {
 .container_menu_2 h3 {
   font-size: 30px;
 }
+.container_menu_2 h3::after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  content: "";
+  transition: linear 1.3s;
+  background: linear-gradient(to left, #965EEC, #C77412);
+}
+.container_menu_2 h3:hover::after {
+  width: 100%;
+}
 
 .container_menu_3 {
   background-color: #EDEFEF;

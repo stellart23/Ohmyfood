@@ -15,6 +15,8 @@
   "bugs": {
     "url": "https://github.com/stellart23/Ohmyfood/issues"
   },
-  "homepage": "https://github.com/stellart23/Ohmyfood#readme"
+  "homepage": "https://github.com/stellart23/Ohmyfood#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6"
+  }
 }
-
