@@ -224,6 +224,7 @@ i::before {
 #encre {
   display: flex;
   justify-content: space-evenly;
+  font-family: "open_sansregular";
 }
 
 #map {
