@@ -197,6 +197,44 @@ i::before {
   transform: scale(1.15);
 }
 
+/*INDEX RECOMMANDATIONS*/
+.MenusRestaurant {
+  text-align: center;
+  font-family: "open_sansregular";
+  color: #579C87;
+}
+
+.connexion {
+  position: absolute;
+  margin-top: -104px;
+  font-family: "open_sansregular";
+  font-size: 15px;
+  color: #FDCB46;
+  margin-left: 20px;
+}
+.connexion i::before {
+  background-image: #FDCB46;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  margin-left: 25px;
+}
+
+/*MENUS RECOMMANDATIONS*/
+#encre {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#map {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contactRestaurant {
+  text-align: center;
+}
+
 body {
   margin: 0;
 }
