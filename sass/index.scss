@@ -14,7 +14,7 @@
 }
 
 i::before{
-    background-image: $color_gradient_clef;
+    background: $color_gradient_clef;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 60px;
@@ -39,7 +39,7 @@ i::before{
     background: $menu1color1;
     text-align: center;
         i::before{
-        background-image: $color_gradient_clef;
+        background: $color_gradient_clef;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 45px;
@@ -62,7 +62,7 @@ i::before{
     h2 {
         font-family: $font-title-menu2;
         font-size: 16px;
-        background-image: $color_gradient_menu2;
+        background: $color_gradient_menu2;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -79,7 +79,7 @@ i::before{
     text-align: center;
     h2 {
         font-family: $font-title-menu3;
-        background-image: $color_gradient_menu3;
+        background: $color_gradient_menu3;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 23px;
@@ -95,7 +95,7 @@ i::before{
     text-align: center;
     h2 {
         font-family: $font-title-menu4;
-        background-image: $color_gradient_menu4;
+        background: $color_gradient_menu4;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 25px;

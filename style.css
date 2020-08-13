@@ -97,7 +97,7 @@ h3:hover::after {
 }
 
 i::before {
-  background-image: linear-gradient(to left, #F6916A, #f15d61);
+  background: linear-gradient(to left, #F6916A, #f15d61);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 60px;
@@ -121,7 +121,7 @@ i::before {
   text-align: center;
 }
 .Menu_LaNoteEnchantée i::before {
-  background-image: linear-gradient(to left, #F6916A, #f15d61);
+  background: linear-gradient(to left, #F6916A, #f15d61);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 45px;
@@ -141,7 +141,7 @@ i::before {
 .Menu_LeChicALaFrançaise h2 {
   font-family: "croissant_oneregular";
   font-size: 16px;
-  background-image: linear-gradient(to left, #965EEC, #C77412);
+  background: linear-gradient(to left, #965EEC, #C77412);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -156,7 +156,7 @@ i::before {
 }
 .Menu_LeDéliceDesPapilles h2 {
   font-family: "parisienneregular";
-  background-image: linear-gradient(to left, #0887FB, #0023DB);
+  background: linear-gradient(to left, #0887FB, #0023DB);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 23px;
@@ -171,7 +171,7 @@ i::before {
 }
 .Menu_LaPaletteDuGoût h2 {
   font-family: "kaushan_scriptregular";
-  background-image: linear-gradient(to left, #BEFF7F, #499C40, #72BF56);
+  background: linear-gradient(to left, #BEFF7F, #499C40, #72BF56);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 25px;
@@ -236,12 +236,12 @@ i::before {
   text-align: center;
 }
 
-body {
-  margin: 0;
+html {
+  scroll-behavior: smooth;
 }
 
-h1 {
-  margin: 0px;
+body, h1 {
+  margin: 0;
 }
 
 a {

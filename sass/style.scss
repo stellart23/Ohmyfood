@@ -9,13 +9,12 @@
 
 @import'recommandations.scss';
 
-
-body {
-    margin: 0;
+html{
+    scroll-behavior: smooth;
 }
 
-h1{
-    margin: 0px;
+body, h1 {
+    margin: 0;
 }
 
 a{
